@@ -3,43 +3,36 @@
 }
 
 body{
-  background-color: rgb(48, 33, 112);
+  background-image:linear-gradient(to right, red, yellow);
+  height: 100%;
   text-align: center;
+  overflow:hidden;
+  min-height: 100%;
 }
 
 #heading{
-  color: aliceblue;
-  text-shadow: 2px 2px #d85e5e;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px #aca2a29d;
 }
 
 #card{
-  text-shadow: 2px 2px #e4a4a4;
-  background-color: rgba(240, 248, 255, 0.568);
+  text-shadow: 2px 2px #eceaea65;
+  background-color: rgba(118, 172, 219, 0.849);
   box-shadow: 0 4px 8px 0 rgba(142, 182, 68, 0.26);
   transition: 0.3s;
   padding: 2px 16px 2px 16px;
   border-radius: 5px;
   margin: 5px;
   border: 1px solid #dadada;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 33.33%;
 }
 #card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-#container {
-  float: left;
-  padding: 0 10px;
+#container{
+  flex-direction: column;
+  display: inline-flex;
+  
 
-
-}
-@media screen and (max-width: 600px) {
-  #container {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
 }
  #img{
  height: 100%;
