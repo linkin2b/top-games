@@ -2,7 +2,9 @@ import React from "react";
 import './App.css';
 import axios from "axios";
 
+
 const URL = "https://steam-store-data.p.rapidapi.com/api/featured/";
+const API_KEY = process.env.REACT_APP_TOPGAMES_KEY;
 
 class Top extends React.Component {
 
@@ -16,6 +18,7 @@ constructor(props){
   };
 }
 
+
 componentDidMount() {
   this.getData()
 }
@@ -27,7 +30,7 @@ const options = {
   url: 'https://steam-store-data.p.rapidapi.com/api/featured/',
   headers: {
     'x-rapidapi-host': 'steam-store-data.p.rapidapi.com',
-    'x-rapidapi-key': '44724f4afcmshd696a5173f1e582p103d8ejsn05f14162c664'
+    'x-rapidapi-key': API_KEY
   }
 };
 
@@ -47,7 +50,7 @@ this.setState({games: data.featured_win})
 
 render (){
   const {games} = this.state;
- console.log(games)
+
 
   return(
   
